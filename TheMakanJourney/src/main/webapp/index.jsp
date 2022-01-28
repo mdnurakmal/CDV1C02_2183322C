@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>The Makan Journey Version 2 </title>
+<title>The Makan Journey Version 3</title>
 
 <link rel='stylesheet' href='webjars/bootstrap/4.6.1/css/bootstrap.min.css'>
 <link rel='stylesheet' href='css/StyleSheet.css'>
@@ -22,6 +22,7 @@
      
                 <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
                    <img src="img/logo.png" class="center">
+                    <img src="img/logo.png" class="center">
                     <h1 class="display-4 py-2 text-truncate"></h1>
                     <div class="px-2">
     
