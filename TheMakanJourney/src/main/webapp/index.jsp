@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>The Makan Journey Version 3</title>
+<title>The Makan Journey Version 3 Release 1.0</title>
 
 <link rel='stylesheet' href='webjars/bootstrap/4.6.1/css/bootstrap.min.css'>
 <link rel='stylesheet' href='css/StyleSheet.css'>
