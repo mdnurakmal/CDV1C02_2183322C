@@ -6,15 +6,16 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException; 
-import java.sql.*;
-import java.io.PrintWriter; 
 
+import org.apache.log4j.Logger;
+
+import test.TestLog4jServlet;
+
+import java.sql.*;
 import java.sql.Connection; 
 
 import java.sql.DriverManager; 
 
-import java.sql.PreparedStatement;
 import java.util.Objects; 
 /**
  * Servlet implementation class RegisterServlet
@@ -22,7 +23,7 @@ import java.util.Objects;
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+	  static final Logger LOGGER = Logger.getLogger(TestLog4jServlet.class);
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -44,12 +45,12 @@ public class LoginServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
 		 response.setContentType("text/html"); 
 	        String n = request.getParameter("username"); 
 	        String p = request.getParameter("password"); 
 	        try { 
-
-	            Class.forName("com.mysql.jdbc.Driver"); 
+	            Class.forName("com.mysql.cj.jdbc.Driver"); 
 	            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mavendb", "root", ""); 
 	            // if you only need a few columns, specify them by name instead of using "*"
 	            String query = "SELECT * FROM userdetails";
@@ -77,6 +78,7 @@ public class LoginServlet extends HttpServlet {
 	            st.close();
 	            
 	        } catch (Exception e2) { 
+	        	//LOGGER.info(e2);
 	            System.out.println(e2); 
 	        } 
 

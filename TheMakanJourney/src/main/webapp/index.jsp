@@ -22,7 +22,6 @@
      
                 <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
                    <img src="img/logo.png" class="center">
-                    <img src="img/logo.png" class="center">
                     <h1 class="display-4 py-2 text-truncate"></h1>
                     <div class="px-2">
     
@@ -32,17 +31,17 @@
                					
                					<h5 style="color:black;">Username</h5>
                                 <label class="sr-only">Username</label>
-                                <input type="text" class="form-control" placeholder="username" name="username">
+                                <input id="username_field"  type="text" class="form-control" placeholder="username" name="username">
                             </div>
                             <div class="form-group">
                             	<h5 style="color:black;">Password</h5>
                                 <label class="sr-only">Password</label>
-                                <input type="password" class="form-control" placeholder="password" name="password">
+                                <input id="password_field" type="password" class="form-control" placeholder="password" name="password">
                             </div>
                             
                             <a href="forget_password.jsp">Forget password</a><br><br>
-                            <button type="submit" class="btn btn-primary btn-lg">Login</button>
-                          <input type="button" class="btn btn-primary btn-lg" onClick="JavaScript:window.location='<%= myPage %>';"  value="Register">
+                            <button id="login_button" type="submit" class="btn btn-primary btn-lg">Login</button>
+                          <input  type="button" class="btn btn-primary btn-lg" onClick="JavaScript:window.location='<%= myPage %>';"  value="Register">
                    
                         </form>
                         
