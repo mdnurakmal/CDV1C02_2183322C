@@ -50,7 +50,7 @@ public class LoginServlet extends HttpServlet {
 	        String p = request.getParameter("password"); 
 	        try { 
 	            Class.forName("com.mysql.cj.jdbc.Driver"); 
-	            Connection con = DriverManager.getConnection( "jdbc:mysql://34.125.93.145:3306/mavendb", "test", "test"); 
+	            Connection con = DriverManager.getConnection( "jdbc:mysql://34.125.93.145:3306/mavendb", "akmal", "akmal"); 
 	            // if you only need a few columns, specify them by name instead of using "*"
 	            String query = "SELECT * FROM userdetails";
 
