@@ -27,7 +27,7 @@ public class TestSelenium {
 			driver.manage().deleteAllCookies();
 			
 			//launching the specified URL
-			driver.get("http://localhost:8080/TheMakanJourney/index.jsp");  
+			driver.get("http://34.125.87.104:8080/TheMakanJourney/index.jsp");  
 			String title = driver.getTitle();		
 			  System.out.println(title+">>>>>"); 
 			AssertJUnit.assertTrue(title.contains("The Makan Journey Version 3 Release 1.1")); 		
@@ -47,7 +47,7 @@ public class TestSelenium {
 			driver.manage().deleteAllCookies();
 			
 			//launching the specified URL
-			driver.get("http://localhost:8080/TheMakanJourney/index.jsp");  
+			driver.get("http://34.125.87.104:8080/TheMakanJourney/index.jsp");  
 
 			String actualString = driver.findElement(By.xpath("//*[@id=\"cover-caption\"]/div/div/div/div/form/div[1]/h2")).getText();
 			AssertJUnit.assertTrue(actualString.contains("Admin Login"));
@@ -65,7 +65,7 @@ public class TestSelenium {
 			driver.manage().deleteAllCookies();
 			
 			//launching the specified URL
-			driver.get("http://localhost:8080/TheMakanJourney/index.jsp");  
+			driver.get("http://34.125.87.104:8080/TheMakanJourney/index.jsp");  
 		
 	
 			WebElement username_enter = driver.findElement(By.id("username_field"));
