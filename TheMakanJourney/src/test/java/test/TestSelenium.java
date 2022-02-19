@@ -17,7 +17,7 @@ public class TestSelenium {
 	    private WebDriver driver;		
 		@Test				
 		public void testTitle() {	
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Downloads\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
 			WebDriver driver = new ChromeDriver();
 	
 			//Deleting all the cookies
