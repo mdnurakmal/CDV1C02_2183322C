@@ -48,7 +48,7 @@ public class ForgetServlet extends HttpServlet {
 	        String p = request.getParameter("password"); 
 	        try { 
 	            Class.forName("com.mysql.cj.jdbc.Driver"); 
-	            Connection con = DriverManager.getConnection( "jdbc:mysql://34.125.93.145:3306/mavendb", "root", "my_secret_password"); 
+	            Connection con = DriverManager.getConnection( "jdbc:mysql://34.125.93.145:3306/mavendb", "db_user", "db_user_pass"); 
 	            String query = "SELECT * FROM userdetails";
 	            Statement st = con.createStatement();
 	            ResultSet rs = st.executeQuery(query);
