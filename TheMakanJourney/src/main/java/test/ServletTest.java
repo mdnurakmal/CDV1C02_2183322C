@@ -1,4 +1,4 @@
-package webapp;
+package test;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import junit.framework.TestCase;
+import webapp.RegisterServlet;
 
 import org.junit.Before;
 import org.junit.Ignore;
