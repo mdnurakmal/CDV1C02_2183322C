@@ -1,4 +1,6 @@
-package test;
+package java.test;
+
+
 import junit.framework.TestCase;
 import webapp.RegisterServlet;
 

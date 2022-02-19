@@ -1,5 +1,4 @@
 package webapp;
-
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
 
-import test.TestLog4jServlet;
+
 
 import java.sql.*;
 import java.sql.Connection; 
