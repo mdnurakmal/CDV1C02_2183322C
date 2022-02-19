@@ -1,4 +1,4 @@
-package webapp;
+package java.test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
