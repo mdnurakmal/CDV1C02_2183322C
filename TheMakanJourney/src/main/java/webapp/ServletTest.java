@@ -1,8 +1,7 @@
-package java.test;
+package webapp;
 
 
 import junit.framework.TestCase;
-import webapp.RegisterServlet;
 
 import org.junit.Ignore;
 import org.junit.Test;
