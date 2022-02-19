@@ -7,6 +7,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;		
 import org.testng.Assert;		
 import org.testng.annotations.Test;	
@@ -18,8 +19,10 @@ public class TestSelenium {
 		@Test				
 		public void testTitle() {	
 			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-			WebDriver driver = new ChromeDriver();
-	
+			 ChromeOptions chromeOptions = new ChromeOptions();
+			  chromeOptions.addArguments("--headless");
+             chromeOptions.addArguments("--no-sandbox");
+ 			WebDriver driver = new ChromeDriver(chromeOptions);
 			//Deleting all the cookies
 			driver.manage().deleteAllCookies();
 			
@@ -36,8 +39,10 @@ public class TestSelenium {
 		@Test
 		public void testHeader() {	
 			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-			WebDriver driver = new ChromeDriver();
-
+			 ChromeOptions chromeOptions = new ChromeOptions();
+			  chromeOptions.addArguments("--headless");
+             chromeOptions.addArguments("--no-sandbox");
+ 			WebDriver driver = new ChromeDriver(chromeOptions);
 			//Deleting all the cookies
 			driver.manage().deleteAllCookies();
 			
@@ -51,8 +56,11 @@ public class TestSelenium {
 		@Test
 		public void testAdminLogin() {	
 			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-			WebDriver driver = new ChromeDriver();
 
+			 ChromeOptions chromeOptions = new ChromeOptions();
+			  chromeOptions.addArguments("--headless");
+              chromeOptions.addArguments("--no-sandbox");
+  			WebDriver driver = new ChromeDriver(chromeOptions);
 			//Deleting all the cookies
 			driver.manage().deleteAllCookies();
 			
