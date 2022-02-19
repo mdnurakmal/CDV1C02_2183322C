@@ -111,6 +111,7 @@
 </dependencies>
   
   <build>
+    <finalName>java-web-project</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
