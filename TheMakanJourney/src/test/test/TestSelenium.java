@@ -1,5 +1,8 @@
 package test;
 
+
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +14,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;	
 import org.testng.annotations.AfterTest;	
 
-public class webTest {		
+public class TestSelenium {		
 	    private WebDriver driver;		
 		@Test				
 		public void testTitle() {	
@@ -25,10 +28,10 @@ public class webTest {
 			driver.get("http://localhost:8080/TheMakanJourney/index.jsp");  
 			String title = driver.getTitle();		
 			  System.out.println(title+">>>>>"); 
-			Assert.assertTrue(title.contains("The Makan Journey Version 3 Release 1.1")); 		
+			AssertJUnit.assertTrue(title.contains("The Makan Journey Version 3 Release 1.1")); 		
 			
 			String actualString = driver.findElement(By.xpath("//*[@id=\"cover-caption\"]/div/div/div/div/form/div[1]/h2")).getText();
-			Assert.assertTrue(actualString.contains("Admin Login"));
+			AssertJUnit.assertTrue(actualString.contains("Admin Login"));
 		}	
 		
 		@Test
@@ -43,7 +46,7 @@ public class webTest {
 			driver.get("http://localhost:8080/TheMakanJourney/index.jsp");  
 
 			String actualString = driver.findElement(By.xpath("//*[@id=\"cover-caption\"]/div/div/div/div/form/div[1]/h2")).getText();
-			Assert.assertTrue(actualString.contains("Admin Login"));
+			AssertJUnit.assertTrue(actualString.contains("Admin Login"));
 		}	
 		
 		@Test
@@ -67,7 +70,7 @@ public class webTest {
 			
 			login.click(); 
 			String title = driver.getTitle();	
-			Assert.assertTrue(title.contains("Admin Dashboard"));
+			AssertJUnit.assertTrue(title.contains("Admin Dashboard"));
 		}	
 		
 		@BeforeTest
