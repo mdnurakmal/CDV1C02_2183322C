@@ -17,7 +17,7 @@ public class TestSelenium {
 	    private WebDriver driver;		
 		@Test				
 		public void testTitle() {	
-			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromium-browser");
+			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 			WebDriver driver = new ChromeDriver();
 	
 			//Deleting all the cookies
@@ -35,7 +35,7 @@ public class TestSelenium {
 		
 		@Test
 		public void testHeader() {	
-			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromium-browser");
+			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 			WebDriver driver = new ChromeDriver();
 
 			//Deleting all the cookies
@@ -50,7 +50,7 @@ public class TestSelenium {
 		
 		@Test
 		public void testAdminLogin() {	
-			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromium-browser");
+			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 			WebDriver driver = new ChromeDriver();
 
 			//Deleting all the cookies
