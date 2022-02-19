@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-19T19:26:41 SGT" name="Default suite" finished-at="2022-02-19T19:26:41 SGT" duration-ms="187">
+    <groups>
+    </groups>
+    <test started-at="2022-02-19T19:26:41 SGT" name="Default test" finished-at="2022-02-19T19:26:41 SGT" duration-ms="187">
+      <class name="test.TestServlet">
+        <test-method signature="testInvalidEmail()[pri:0, instance:test.TestServlet@1b7cc17c]" started-at="2022-02-19T19:26:41 SGT" name="testInvalidEmail" finished-at="2022-02-19T19:26:41 SGT" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidEmail -->
+        <test-method signature="testValidEmail()[pri:0, instance:test.TestServlet@1b7cc17c]" started-at="2022-02-19T19:26:41 SGT" name="testValidEmail" finished-at="2022-02-19T19:26:41 SGT" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidEmail -->
+      </class> <!-- test.TestServlet -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
