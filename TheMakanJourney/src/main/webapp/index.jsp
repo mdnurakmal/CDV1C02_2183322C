@@ -27,7 +27,7 @@
     
                         <form action="LoginServlet" method="post" class="justify-content-center">
                             <div class="form-group">
-               					<h2 style="color:black;">Admin Login</h2>
+               					<h2 style="color:black;">Admin Login1</h2>
                					
                					<h5 style="color:black;">Username</h5>
                                 <label class="sr-only">Username</label>
