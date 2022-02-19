@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException; 
-
+import org.apache.commons.validator.routines.EmailValidator;
 import java.io.PrintWriter; 
 
 import java.sql.Connection; 
@@ -44,10 +44,27 @@ public class RegisterServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		 response.setContentType("text/html"); 
-	        String n = request.getParameter("username"); 
-	        String p = request.getParameter("password"); 
-	        String e = request.getParameter("email"); 
-	        String c = request.getParameter("language"); 
+	
+       	 boolean status = register(request.getParameter("username"),request.getParameter("password"),request.getParameter("email"),request.getParameter("language"));
+	     if (status)
+	    	 response.sendRedirect("registration_successful.jsp");
+	     else
+	    	 response.sendRedirect("registration_failed.jsp");
+	       
+	}
+	
+	public boolean register(String username,String passowrd,String email, String language)
+	{
+		  String n = username; 
+	        String p = passowrd; 
+	        String e = email; 
+	        String c = language; 
+	        
+	
+	        boolean valid = EmailValidator.getInstance().isValid(e);
+	        if(!valid)
+	        	return false;
+	        
 	        try { 
 
 	            Class.forName("com.mysql.cj.jdbc.Driver"); 
@@ -62,12 +79,16 @@ public class RegisterServlet extends HttpServlet {
 	            int i = ps.executeUpdate(); 
 	            if (i > 0) 
 	            {
-	            	  response.sendRedirect("registration_successful.jsp");
+	            	 
+	            	  return true;
 	            }
-	            
-	        } catch (Exception e2) { 
+	        }
+	        catch (Exception e2) { 
 	            System.out.println(e2); 
-	        } 
+	            return false;
+	        }   
+	            return false;
 	}
+
 
 }

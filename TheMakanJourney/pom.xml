@@ -24,12 +24,24 @@
     </dependency>
 <!-- https://mvnrepository.com/artifact/org.jmockit/jmockit -->
 <!-- https://mvnrepository.com/artifact/org.jmockit/jmockit -->
-<dependency> 
-    <groupId>org.jmockit</groupId> 
-    <artifactId>jmockit</artifactId> 
-    <version>1.36</version>
+<!-- https://mvnrepository.com/artifact/org.jmockit/jmockit -->
+<!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
+<dependency>
+    <groupId>org.mockito</groupId>
+    <artifactId>mockito-all</artifactId>
+    <version>2.0.2-beta</version>
+    <scope>test</scope>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/commons-validator/commons-validator -->
+<dependency>
+    <groupId>commons-validator</groupId>
+    <artifactId>commons-validator</artifactId>
+    <version>1.7</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
 <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
 <dependency>
     <groupId>org.junit.jupiter</groupId>
@@ -38,6 +50,7 @@
     <scope>test</scope>
 </dependency>
 
+
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -45,6 +58,13 @@
     <version>4.1.2</version>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-launcher -->
+<dependency>
+    <groupId>org.junit.platform</groupId>
+    <artifactId>junit-platform-launcher</artifactId>
+    <version>1.7.0</version>
+    <scope>test</scope>
+</dependency>
 
 
 

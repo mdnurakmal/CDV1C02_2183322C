@@ -5,7 +5,7 @@
     <classes>
       <class name="webapp.webTest">
         <methods>
-          <include name="testInput"/>
+          <include name="testAdminLogin"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
         </methods>
