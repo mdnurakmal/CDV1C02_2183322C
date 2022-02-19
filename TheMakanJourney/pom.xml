@@ -15,7 +15,6 @@
     <groupId>org.springframework</groupId>
     <artifactId>spring-mock</artifactId>
     <version>2.0.8</version>
-    <scope>test</scope>
 </dependency>
   <dependency>
         <groupId>log4j</groupId>
@@ -30,7 +29,6 @@
     <groupId>org.mockito</groupId>
     <artifactId>mockito-all</artifactId>
     <version>2.0.2-beta</version>
-    <scope>test</scope>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/commons-validator/commons-validator -->
@@ -47,7 +45,6 @@
     <groupId>org.junit.jupiter</groupId>
     <artifactId>junit-jupiter-api</artifactId>
     <version>5.8.2</version>
-    <scope>test</scope>
 </dependency>
 
 
@@ -63,7 +60,6 @@
     <groupId>org.junit.platform</groupId>
     <artifactId>junit-platform-launcher</artifactId>
     <version>1.7.0</version>
-    <scope>test</scope>
 </dependency>
 
 
